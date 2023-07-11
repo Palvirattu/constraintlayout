@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".constrainlayout">
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".1"
+        android:id="@+id/guid_first"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".9"
+        android:id="@+id/guid_last"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".31"
+        android:id="@+id/guid_second"
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="space station"
+        app:layout_constraintStart_toStartOf="@+id/guid_first"
+        app:layout_constraintEnd_toEndOf="@+id/guid_second"
+        app:layout_constraintTop_toTopOf="@+id/guid_hfist"
+        app:layout_constraintBottom_toBottomOf="@+id/guid_hsecond"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".1"
+        android:id="@+id/guid_hsecond"
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".03"
+        android:id="@+id/guid_hfist"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rovers"
+        app:layout_constraintEnd_toEndOf="@+id/guid_last"
+        app:layout_constraintBottom_toBottomOf="@+id/guid_hsecond"
+        app:layout_constraintStart_toStartOf="@+id/guid_vthird"
+        app:layout_constraintTop_toTopOf="@+id/guid_first"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".69"
+        android:id="@+id/guid_vthird"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".39"
+        android:id="@+id/guid_vfourth"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".61"
+        android:id="@+id/guid_vfifth"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flights"
+        app:layout_constraintStart_toStartOf="@+id/guid_vfourth"
+        app:layout_constraintTop_toTopOf="@+id/guid_hfist"
+        app:layout_constraintBottom_toBottomOf="@+id/guid_hsecond"
+        app:layout_constraintEnd_toEndOf="@+id/guid_vfifth"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="space station"
+        app:layout_constraintStart_toStartOf="@+id/guid_first"
+        app:layout_constraintTop_toTopOf="@+id/guid_hsecond"
+        app:layout_constraintEnd_toEndOf="@+id/guid_second"
+        app:layout_constraintBottom_toBottomOf="@+id/guid_hthird" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flights"
+        app:layout_constraintStart_toStartOf="@+id/guid_vfourth"
+        app:layout_constraintEnd_toEndOf="@+id/guid_vfifth"
+        app:layout_constraintTop_toTopOf="@+id/guid_hsecond"
+        app:layout_constraintBottom_toBottomOf="@+id/guid_hthird"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Rovers"
+        app:layout_constraintStart_toStartOf="@+id/guid_vthird"
+        app:layout_constraintEnd_toEndOf="@+id/guid_last"
+        app:layout_constraintTop_toTopOf="@+id/guid_hsecond"
+        app:layout_constraintBottom_toBottomOf="@+id/guid_hthird"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".14"
+        android:id="@+id/guid_hthird"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".16"
+        android:id="@+id/guid_hfouth"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".4"
+        android:id="@+id/guid_hfifth"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="DCA"
+        app:layout_constraintStart_toStartOf="@+id/guid_first"
+        app:layout_constraintEnd_toEndOf="@+id/guid_vfourth"
+        app:layout_constraintTop_toTopOf="@+id/guid_hfouth"
+        app:layout_constraintBottom_toBottomOf="@+id/guid_hfifth"
+        android:background="@color/black"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="MARS"
+        app:layout_constraintStart_toStartOf="@+id/guid_vfifth"
+        app:layout_constraintEnd_toEndOf="@+id/guid_last"
+        app:layout_constraintTop_toTopOf="@+id/guid_hfouth"
+        app:layout_constraintBottom_toBottomOf="@+id/guid_hfifth"
+        android:background="@color/black"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="button"
+        app:layout_constraintStart_toStartOf="@+id/guid_second"
+        app:layout_constraintEnd_toEndOf="@+id/guid_vthird"
+        app:layout_constraintTop_toTopOf="@+id/guid_hthird"
+        app:layout_constraintBottom_toBottomOf="@+id/guid_hfifth"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".5"
+        android:id="@+id/guid_hsixth"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".6"
+        android:id="@+id/guid_hseven"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="BUTTON"
+        app:layout_constraintStart_toStartOf="@+id/guid_first"
+        app:layout_constraintEnd_toEndOf="@+id/guid_vthird"
+        app:layout_constraintTop_toTopOf="@+id/guid_hsixth"
+        app:layout_constraintBottom_toBottomOf="@+id/guid_hseven"
+        android:background="@color/black"
+        android:id="@+id/btn"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".7"
+        android:id="@+id/guid_eight"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".8"
+        android:id="@+id/guid_nine"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="bOTTUN"
+        app:layout_constraintStart_toStartOf="@+id/guid_first"
+        app:layout_constraintEnd_toEndOf="@+id/guid_vfifth"
+        app:layout_constraintTop_toTopOf="@+id/guid_eight"
+        app:layout_constraintBottom_toBottomOf="@+id/guid_nine"
+        android:background="@color/black"/>
+
+    <Switch
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/btn"
+        app:layout_constraintStart_toStartOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="@+id/btn"
+        app:layout_constraintBottom_toBottomOf="@+id/guid_hseven" />
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
